@@ -167,6 +167,8 @@ extern void nrf_modem_recoverable_error_handler(uint32_t error);
  */
 void nrf_modem_application_irq_handler(void);
 
+int nrf_modem_trace_processed_callback(const uint8_t *buf, uint32_t len);
+
 /**
  * @brief Trace IRQ handler in the modem library.
  *
